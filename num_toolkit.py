@@ -71,3 +71,10 @@ def gcd(a, b):
     if b == 0:
         return a
     return gcd(b, a % b)
+
+# Fibonacci series
+def fib_series(terms):
+    series = []
+    for i in range(terms):
+        series.append(fib(i))
+    return series
