@@ -180,7 +180,21 @@ while True:
             print_tables(start, end)
             save("Multiplication Tables", (start, end), "Done")
 
-            save("Prime Numbers", n, result)    
+            save("Prime Numbers", n, result)
+
+
+             # Option 7: Session data
+        elif choice == "7":
+            print("Primes Found:", primes)
+            print("Total Runs:", len(history))
+            for h in history:
+                print(h)
+
+
+
+
+
+
 
 
 
