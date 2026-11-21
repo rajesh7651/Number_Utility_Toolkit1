@@ -125,7 +125,7 @@ while True:
 
     choice = input("Enter your choice (1-8): ")
 
- try:
+    try:
         # Option 1: Number checks
         if choice == "1":
             n = int(input("Enter a positive integer: "))
