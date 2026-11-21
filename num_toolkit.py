@@ -38,3 +38,16 @@ def is_perfect(n):
         if n % i == 0:
             total = total + i
     return total == n
+
+# Sum, count and reverse of digits
+def digit_ops(n):
+    total = 0
+    count = 0
+    rev = 0
+    while n > 0:
+        d = n % 10
+        total = total + d
+        count = count + 1
+        rev = rev * 10 + d
+        n = n // 10
+    return total, count, rev
