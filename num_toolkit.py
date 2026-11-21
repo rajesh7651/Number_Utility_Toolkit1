@@ -19,3 +19,12 @@ def is_prime(n):
 def is_palindrome(n):
     s = str(n)
     return s == s[::-1]
+
+
+# Check Armstrong
+def is_armstrong(n):
+    s = str(n)
+    total = 0
+    for d in s:
+        total = total + int(d) ** len(s)
+    return total == n
