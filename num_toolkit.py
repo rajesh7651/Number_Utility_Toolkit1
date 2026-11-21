@@ -141,6 +141,18 @@ while True:
             n = int(input("Enter a positive integer: "))
             result = digit_ops(n)
             print("Sum, Count, Reverse:", result)
-            save("Digit Operations", n, result)    
+            save("Digit Operations", n, result)
+            
+              # Option 3: Fibonacci and factorial
+        elif choice == "3":
+            n = int(input("Enter a non-negative integer: "))
+            if n < 0:
+                print("Number must not be negative.")
+            else:
+                series = fib_series(n)
+                fact = factorial(n)
+                print("Fibonacci Series:", series)
+                print("Factorial:", fact)
+                save("Fibonacci and Factorial", n, (series, fact))
 
 
