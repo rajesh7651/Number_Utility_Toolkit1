@@ -149,7 +149,7 @@ while True:
             save("Digit Operations", n, result)
             
               # Option 3: Fibonacci and factorial
-        elif choice == "3":
+        elif choice == "3": 
             n = int(input("Enter a non-negative integer: "))
             if n < 0:
                 print("Number must not be negative.")
@@ -199,7 +199,7 @@ while True:
             # Option 8: Exit
         elif choice == "8":
             print("All results are saved in results.txt")
-            print("Goodbye!")
+            print("Goodbye!!")
             break
 
         else:
