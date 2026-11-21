@@ -136,4 +136,11 @@ while True:
             print("Prime, Palindrome, Armstrong, Perfect:", result)
             save("Number Check", n, result)
 
+           # Option 2: Digit operations
+        elif choice == "2":
+            n = int(input("Enter a positive integer: "))
+            result = digit_ops(n)
+            print("Sum, Count, Reverse:", result)
+            save("Digit Operations", n, result)    
+
 
