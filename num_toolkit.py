@@ -126,7 +126,3 @@ while True:
     choice = input("Enter your choice (1-8): ")
 
    
-            if p and n not in primes:
-                primes.append(n)
-            print("Prime, Palindrome, Armstrong, Perfect:", result)
-            save("Number Check", n, result)
