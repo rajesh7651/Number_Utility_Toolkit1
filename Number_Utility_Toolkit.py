@@ -1,0 +1,16 @@
+# PROJECT 8: NUMBER UTILITY TOOLKIT
+# Group 8: Rajesh Chaurasiya, Manas Dubey, Sweta Gupta, Pavan Kumar
+
+# Session data
+primes = []
+history = []
+
+
+# Check prime
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
