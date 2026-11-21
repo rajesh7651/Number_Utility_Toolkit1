@@ -105,3 +105,23 @@ def save(operation, inp, result):
     f = open("results.txt", "a")
     f.write(text + "\n")
     f.close()
+
+
+# Main program
+print("PROJECT 8: NUMBER UTILITY TOOLKIT")
+print("Group 8: Rajesh Chaurasiya, Manas Dubey, Sweta, Pavan Kumar")
+
+while True:
+    # Menu
+    print("\n--- MAIN MENU ---")
+    print("1. Check Prime, Palindrome, Armstrong, Perfect")
+    print("2. Sum, Count and Reverse of Digits")
+    print("3. Fibonacci Series and Factorial")
+    print("4. GCD and LCM")
+    print("5. Prime Numbers up to N")
+    print("6. Multiplication Tables")
+    print("7. View Session Data")
+    print("8. Exit")
+
+    choice = input("Enter your choice (1-8): ")
+
