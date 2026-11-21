@@ -156,3 +156,15 @@ while True:
                 save("Fibonacci and Factorial", n, (series, fact))
 
 
+                # Option 4: GCD and LCM
+        elif choice == "4":
+            a = int(input("Enter first number: "))
+            b = int(input("Enter second number: "))
+            g = gcd(a, b)
+            lcm = a * b // g
+            print("GCD:", g)
+            print("LCM:", lcm)
+            save("GCD and LCM", (a, b), (g, lcm))
+
+
+
