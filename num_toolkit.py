@@ -13,6 +13,7 @@ def is_prime(n):
     for i in range(2, n):
         if n % i == 0:
             return False
+            break
     return True
 
 # Check palindrome
@@ -58,6 +59,7 @@ def factorial(n):
         return 1
     return n * factorial(n - 1)
 
+
 # Fibonacci number (recursion)
 def fib(n):
     if n == 0:
@@ -66,11 +68,13 @@ def fib(n):
         return 1
     return fib(n - 1) + fib(n - 2)
 
+
 # GCD (recursion)
 def gcd(a, b):
     if b == 0:
         return a
     return gcd(b, a % b)
+
 
 # Fibonacci series
 def fib_series(terms):
@@ -78,6 +82,7 @@ def fib_series(terms):
     for i in range(terms):
         series.append(fib(i))
     return series
+
 
 # Prime numbers up to N
 def primes_upto(n):
@@ -191,7 +196,7 @@ while True:
                 print(h)
                 
            
-        # Option 8: Exit
+            # Option 8: Exit
         elif choice == "8":
             print("All results are saved in results.txt")
             print("Goodbye!")
@@ -199,6 +204,14 @@ while True:
 
         else:
             print("Invalid choice! Select 1 to 8.")
+
+
+
+        # Error handling
+    except ValueError:
+        print("Please enter a valid number.")
+    except ZeroDivisionError:
+        print("GCD is 0, so LCM cannot be found.")
             
 
 
