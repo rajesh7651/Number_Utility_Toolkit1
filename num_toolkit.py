@@ -32,7 +32,18 @@ def is_armstrong(n):
 
 
 # Check perfect number
+# Check whether the sum of proper divisors equals the number
 def is_perfect(n):
+    """
+>>>>is_perfect(6)
+True
+>>>>is_perfect(28)
+True
+>>>>is_perfect(12)
+False
+>>>> is_perfect(1)
+False
+"""
     if n < 1:
         return False
     total = 0
