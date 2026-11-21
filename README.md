@@ -115,7 +115,7 @@ On some systems use `py num_toolkit.py` or `python3 num_toolkit.py` instead.
 
 ---
 
-## 🖥️ Sample Run
+## 🖥️ Sample Run     
 
 **Option 1: number checks**
 
@@ -467,5 +467,5 @@ while True:
 
 Made with 🐍 Python by Group 8
 
-</div>
+</div>   
 
