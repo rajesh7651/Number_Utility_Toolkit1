@@ -28,3 +28,13 @@ def is_armstrong(n):
     for d in s:
         total = total + int(d) ** len(s)
     return total == n
+
+# Check perfect number
+def is_perfect(n):
+    if n < 1:
+        return False
+    total = 0
+    for i in range(1, n):
+        if n % i == 0:
+            total = total + i
+    return total == n
