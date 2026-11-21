@@ -78,3 +78,13 @@ def fib_series(terms):
     for i in range(terms):
         series.append(fib(i))
     return series
+
+# Prime numbers up to N
+def primes_upto(n):
+    result = []
+    for i in range(2, n + 1):
+        if is_prime(i):
+            result.append(i)
+            if i not in primes:
+                primes.append(i)
+    return result
