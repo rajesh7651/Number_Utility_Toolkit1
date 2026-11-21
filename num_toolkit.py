@@ -96,3 +96,12 @@ def print_tables(start, end):
         for i in range(1, 11):
             print(num, "x", i, "=", num * i)
         print("--------------------")
+
+
+# Save result in file
+def save(operation, inp, result):
+    text = operation + " | Input: " + str(inp) + " | Result: " + str(result)
+    history.append(text)
+    f = open("results.txt", "a")
+    f.write(text + "\n")
+    f.close()
