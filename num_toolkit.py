@@ -171,6 +171,15 @@ while True:
             n = int(input("Enter N: "))
             result = primes_upto(n)
             print("Prime Numbers:", result)
+
+
+            # Option 6: Multiplication tables
+        elif choice == "6":
+            start = int(input("Enter starting number: "))
+            end = int(input("Enter ending number: "))
+            print_tables(start, end)
+            save("Multiplication Tables", (start, end), "Done")
+
             save("Prime Numbers", n, result)    
 
 
