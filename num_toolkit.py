@@ -1,5 +1,5 @@
 # PROJECT 8: NUMBER UTILITY TOOLKIT
-# Group 8: Rajesh Chaurasiya, Manas Dubey, Sweta Gupta, Pavan Kumar
+# Group 8: Rajesh Chaurasiya, Manas Dubey, Sweta, Pavan Kumar
 
 # Session data
 primes = []
@@ -13,10 +13,10 @@ def is_prime(n):
     for i in range(2, n):
         if n % i == 0:
             return False
-            break
     return True
 
-# Check palindrome
+
+ # Check palindrome
 def is_palindrome(n):
     s = str(n)
     return s == s[::-1]
@@ -30,6 +30,7 @@ def is_armstrong(n):
         total = total + int(d) ** len(s)
     return total == n
 
+
 # Check perfect number
 def is_perfect(n):
     if n < 1:
@@ -39,6 +40,7 @@ def is_perfect(n):
         if n % i == 0:
             total = total + i
     return total == n
+
 
 # Sum, count and reverse of digits
 def digit_ops(n):
@@ -53,11 +55,13 @@ def digit_ops(n):
         n = n // 10
     return total, count, rev
 
+
 # Factorial (recursion)
 def factorial(n):
     if n == 0 or n == 1:
         return 1
     return n * factorial(n - 1)
+
 
 
 # Fibonacci number (recursion)
@@ -67,6 +71,7 @@ def fib(n):
     if n == 1:
         return 1
     return fib(n - 1) + fib(n - 2)
+
 
 
 # GCD (recursion)
@@ -129,6 +134,7 @@ while True:
     print("8. Exit")
 
     choice = input("Enter your choice (1-8): ")
+
     
     try:
         # Option 1: Number checks
@@ -141,15 +147,15 @@ while True:
             print("Prime, Palindrome, Armstrong, Perfect:", result)
             save("Number Check", n, result)
 
-           # Option 2: Digit operations
+            # Option 2: Digit operations
         elif choice == "2":
             n = int(input("Enter a positive integer: "))
             result = digit_ops(n)
             print("Sum, Count, Reverse:", result)
             save("Digit Operations", n, result)
-            
-              # Option 3: Fibonacci and factorial
-        elif choice == "3": 
+
+            # Option 3: Fibonacci and factorial
+        elif choice == "3":
             n = int(input("Enter a non-negative integer: "))
             if n < 0:
                 print("Number must not be negative.")
@@ -160,8 +166,7 @@ while True:
                 print("Factorial:", fact)
                 save("Fibonacci and Factorial", n, (series, fact))
 
-
-                # Option 4: GCD and LCM
+            # Option 4: GCD and LCM
         elif choice == "4":
             a = int(input("Enter first number: "))
             b = int(input("Enter second number: "))
@@ -171,12 +176,12 @@ while True:
             print("LCM:", lcm)
             save("GCD and LCM", (a, b), (g, lcm))
 
-                # Option 5: Primes up to N
+            # Option 5: Primes up to N
         elif choice == "5":
             n = int(input("Enter N: "))
             result = primes_upto(n)
             print("Prime Numbers:", result)
-
+            save("Prime Numbers", n, result)
 
             # Option 6: Multiplication tables
         elif choice == "6":
@@ -185,40 +190,25 @@ while True:
             print_tables(start, end)
             save("Multiplication Tables", (start, end), "Done")
 
-            save("Prime Numbers", n, result)
-
-
-             # Option 7: Session data
+            # Option 7: Session data
         elif choice == "7":
             print("Primes Found:", primes)
             print("Total Runs:", len(history))
             for h in history:
                 print(h)
-                
-           
-            # Option 8: Exit
+
+        # Option 8: Exit
         elif choice == "8":
             print("All results are saved in results.txt")
-            print("Goodbye!!")
+            print("Goodbye!")
             break
 
         else:
             print("Invalid choice! Select 1 to 8.")
 
-
-
-        # Error handling
+    
+    # Error handling
     except ValueError:
         print("Please enter a valid number.")
     except ZeroDivisionError:
         print("GCD is 0, so LCM cannot be found.")
-            
-
-
-
-
-
-
-
-
-
