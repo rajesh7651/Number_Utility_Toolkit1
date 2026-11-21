@@ -166,5 +166,12 @@ while True:
             print("LCM:", lcm)
             save("GCD and LCM", (a, b), (g, lcm))
 
+                # Option 5: Primes up to N
+        elif choice == "5":
+            n = int(input("Enter N: "))
+            result = primes_upto(n)
+            print("Prime Numbers:", result)
+            save("Prime Numbers", n, result)    
+
 
 
