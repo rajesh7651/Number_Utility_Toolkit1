@@ -189,6 +189,17 @@ while True:
             print("Total Runs:", len(history))
             for h in history:
                 print(h)
+                
+           
+        # Option 8: Exit
+        elif choice == "8":
+            print("All results are saved in results.txt")
+            print("Goodbye!")
+            break
+
+        else:
+            print("Invalid choice! Select 1 to 8.")
+            
 
 
 
