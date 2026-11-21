@@ -125,12 +125,7 @@ while True:
 
     choice = input("Enter your choice (1-8): ")
 
-    try:
-        # Option 1: Number checks
-        if choice == "1":
-            n = int(input("Enter a positive integer: "))
-            p = is_prime(n)
-            result = (p, is_palindrome(n), is_armstrong(n), is_perfect(n))
+   
             if p and n not in primes:
                 primes.append(n)
             print("Prime, Palindrome, Armstrong, Perfect:", result)
