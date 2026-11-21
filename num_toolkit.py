@@ -51,3 +51,9 @@ def digit_ops(n):
         rev = rev * 10 + d
         n = n // 10
     return total, count, rev
+
+# Factorial (recursion)
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    return n * factorial(n - 1)
