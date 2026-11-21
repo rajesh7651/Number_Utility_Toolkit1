@@ -88,3 +88,16 @@ def primes_upto(n):
             if i not in primes:
                 primes.append(i)
     return result
+
+            
+# Multiplication tables
+def print_tables(start, end):
+    for num in range(start, end + 1):
+        for i in range(1, 11):
+            print(num, "x", i, "=", num * i)
+        print("--------------------")
+
+            result.append(i)
+            if i not in primes:
+                primes.append(i)
+    return result
