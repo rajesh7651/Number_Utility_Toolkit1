@@ -11,7 +11,7 @@
 
 *Project 8 · Python Programming Course Project*
 
-</div>
+</div>  
 
 ---
 
@@ -42,7 +42,7 @@ Every result from options 1 to 6 is saved automatically (see [Results file](#-re
 
 ## 🧠 Python Concepts Used
 
-| Concept | Where it appears |
+| Concept | Where it appears |   
 |---------|------------------|
 | **Functions** | Every tool is a separate function (`is_prime`, `gcd`, `fib_series`, ...) |
 | **Recursion** | `factorial()`, `fib()` and `gcd()` call themselves until a base case is reached |
