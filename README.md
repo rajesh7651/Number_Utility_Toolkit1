@@ -191,10 +191,12 @@ After any message, the menu is shown again, so the program keeps running.
 ## 📁 Project Structure
 
 ```text
-Number-Utility-Toolkit/
-├── num_toolkit.py   # the complete program
-├── results.txt      # created automatically after the first calculation
-└── README.md        # this file
+Number_Utility_Toolkit1/
+├── Group8_NumberUtilityToolkit_PPT.pdf     # project presentation
+├── Group8_NumberUtilityToolkit_Report.pdf  # project report
+├── README.md                               # this file
+├── num_toolkit.py                          # the complete program
+└── result.txt                              # log of calculations
 ```
 
 ---
@@ -467,5 +469,4 @@ while True:
 
 Made with 🐍 Python by Group 8
 
-</div>   
-
+</div>
